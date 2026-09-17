@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🧠 RecruitNeo
+#  RecruitNeo
 ### AI-Powered Resume Relevance Engine
 
 *Score resumes against job descriptions. Explain the score. Close the feedback loop.*
@@ -17,7 +17,7 @@
 
 ---
 
-## 📌 Table of Contents
+##  Table of Contents
 - [Why RecruitNeo](#-why-recruitneo-is-different)
 - [Architecture](#-architecture)
 - [Features](#-features)
@@ -33,7 +33,7 @@
 
 ---
 
-## ✨ Why RecruitNeo is Different
+##  Why RecruitNeo is Different
 
 Most resume screeners hand recruiters an opaque number and stop there. RecruitNeo treats scoring as a **two-sided feedback loop** — recruiters get signal, candidates get a path to improve.
 
@@ -47,7 +47,7 @@ Most resume screeners hand recruiters an opaque number and stop there. RecruitNe
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 ```
 ┌─────────────────────┐        HTTP/JWT        ┌──────────────────────┐
@@ -70,7 +70,7 @@ Most resume screeners hand recruiters an opaque number and stop there. RecruitNe
 
 ---
 
-## 🚀 Features
+##  Features
 
 ### Parsing
 - **Resume (PDF/DOCX)** → skills, experience, education, certifications, projects
@@ -88,11 +88,11 @@ Most resume screeners hand recruiters an opaque number and stop there. RecruitNe
 ### Feedback & Growth
 - **Gap analysis**: missing skills, certs, project types
 - **Gemini-powered personalized feedback** (template fallback if no API key)
-- **📈 Score-trend tracking** — students see progress across resume re-uploads per job
+- ** Score-trend tracking** — students see progress across resume re-uploads per job
 
 ---
 
-## 👥 Role-Based Access
+##  Role-Based Access
 
 | Role | Can Do |
 |---|---|
@@ -102,7 +102,7 @@ Most resume screeners hand recruiters an opaque number and stop there. RecruitNe
 
 ---
 
-## ⚡ Quick Start
+##  Quick Start
 
 ### Prerequisites
 - Python 3.11+
@@ -144,7 +144,7 @@ streamlit run frontend/dashboard.py
 
 ---
 
-## 🐳 Docker Deployment
+##  Docker Deployment
 
 ### Using Docker Compose (Recommended)
 
@@ -175,7 +175,7 @@ docker build -t recruitneo-frontend -f frontend/Dockerfile .
 
 ---
 
-## ⚙️ Environment Variables
+##  Environment Variables
 
 | Variable | Required | Default | Description |
 |---|:---:|---|---|
@@ -189,11 +189,11 @@ docker build -t recruitneo-frontend -f frontend/Dockerfile .
 | `PROJECT_NAME` | No | `Resume Relevance Check System` | App display name |
 | `ENVIRONMENT` | No | `development` | `development` / `production` |
 
-> **⚠️ Security**: Never commit `.env` to version control. Use `.env.example` as template.
+> ** Security**: Never commit `.env` to version control. Use `.env.example` as template.
 
 ---
 
-## 📡 API Reference
+##  API Reference
 
 ### Authentication
 All endpoints (except `/api/auth/*`) require `Authorization: Bearer <token>` header.
@@ -238,7 +238,7 @@ All endpoints (except `/api/auth/*`) require `Authorization: Bearer <token>` hea
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Layer | Technologies |
 |---|---|
@@ -255,7 +255,7 @@ All endpoints (except `/api/auth/*`) require `Authorization: Bearer <token>` hea
 
 ---
 
-## 🧪 Development
+##  Development
 
 ### Install Dev Dependencies
 ```bash
@@ -295,7 +295,7 @@ alembic downgrade -1
 
 ---
 
-## 🤝 Contributing
+##  Contributing
 
 1. **Fork** the repository
 2. **Create** a feature branch: `git checkout -b feat/amazing-feature`
@@ -320,7 +320,7 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ---
 
-## 🗺 Roadmap
+##  Roadmap
 
 - [ ] AI-generated resume rewrite suggestions
 - [ ] Recruiter shortlist & candidate notes
@@ -333,13 +333,13 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/):
 
 ---
 
-## 📄 License
+##  License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - [sentence-transformers](https://www.sbert.net/) for semantic embeddings
 - [ChromaDB](https://www.trychroma.com/) for vector storage
