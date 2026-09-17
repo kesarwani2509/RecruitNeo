@@ -1,0 +1,14 @@
+Senior Data Scientist
+
+We are hiring a Senior Data Scientist based in Bangalore. The ideal candidate has 4-7 years of experience building machine learning models and data pipelines.
+
+Must-have skills: Python, SQL, Machine Learning, Deep Learning, NLP, PyTorch, TensorFlow, Pandas, NumPy, Spark, Docker, Kubernetes, AWS.
+
+Good-to-have: GCP, Airflow, Databricks.
+
+Required certifications: AWS Certified, TensorFlow Certified.
+
+Responsibilities:
+- Build and deploy ML models to production
+- Design data pipelines using ETL and Airflow
+- Work with cross-functional teams in an agile environment
