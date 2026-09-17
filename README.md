@@ -15,21 +15,6 @@
 
 </div>
 
----
-
-##  Table of Contents
-- [Why RecruitNeo](#-why-recruitneo-is-different)
-- [Architecture](#-architecture)
-- [Features](#-features)
-- [Roles](#-role-based-access)
-- [Quick Start](#-quick-start)
-- [Docker Deployment](#-docker-deployment)
-- [Environment Variables](#-environment-variables)
-- [API Reference](#-api-reference)
-- [Tech Stack](#-tech-stack)
-- [Development](#-development)
-- [Contributing](#-contributing)
-- [Roadmap](#-roadmap)
 
 ---
 
@@ -113,8 +98,8 @@ Most resume screeners hand recruiters an opaque number and stop there. RecruitNe
 
 ```bash
 # 1. Clone & enter
-git clone https://github.com/yourusername/recruitneo.git
-cd recruitneo
+git clone https://github.com/kesarwani2509/RecruitNeo.git
+cd RecruitNeo
 
 # 2. Create virtual environment
 python3 -m venv .venv
@@ -144,36 +129,6 @@ streamlit run frontend/dashboard.py
 
 ---
 
-##  Docker Deployment
-
-### Using Docker Compose (Recommended)
-
-```bash
-# 1. Configure environment
-cp .env.example .env
-# Edit .env with production values
-
-# 2. Build and start all services
-docker-compose up -d --build
-```
-
-**Services:**
-- `postgres` — PostgreSQL 16
-- `backend` — FastAPI on port 8000
-- `frontend` — Streamlit on port 8500
-- `chroma` — Vector DB (optional, for semantic search)
-
-### Manual Docker Build
-
-```bash
-# Backend
-docker build -t recruitneo-backend -f backend/Dockerfile .
-
-# Frontend
-docker build -t recruitneo-frontend -f frontend/Dockerfile .
-```
-
----
 
 ##  Environment Variables
 
@@ -189,7 +144,7 @@ docker build -t recruitneo-frontend -f frontend/Dockerfile .
 | `PROJECT_NAME` | No | `Resume Relevance Check System` | App display name |
 | `ENVIRONMENT` | No | `development` | `development` / `production` |
 
-> ** Security**: Never commit `.env` to version control. Use `.env.example` as template.
+
 
 ---
 
@@ -303,35 +258,8 @@ alembic downgrade -1
 4. **Push** to branch: `git push origin feat/amazing-feature`
 5. **Open** a Pull Request
 
-### Commit Message Convention
-We follow [Conventional Commits](https://www.conventionalcommits.org/):
-- `feat:` — new feature
-- `fix:` — bug fix
-- `docs:` — documentation
-- `refactor:` — code restructure
-- `test:` — test additions
-- `chore:` — maintenance
 
-### Code Style
-- **Formatter**: Ruff (line-length 100, double quotes)
-- **Linter**: Ruff (pycodestyle, pyflakes, isort, bugbear)
-- **Types**: MyPy (strict mode for new code)
-- **Pre-commit**: Runs on every commit
 
----
-
-##  Roadmap
-
-- [ ] AI-generated resume rewrite suggestions
-- [ ] Recruiter shortlist & candidate notes
-- [ ] JD quality scoring
-- [ ] Email verification on signup
-- [ ] Shareable candidate score badge
-- [ ] Multi-language resume support
-- [ ] Webhook notifications for evaluation completion
-- [ ] Advanced analytics dashboard
-
----
 
 ##  License
 
